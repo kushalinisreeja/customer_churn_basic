@@ -9,27 +9,34 @@
 
 ## 📌 Project Overview
 
-Customer churn is a major business challenge in the telecom industry. This basic-level project
-focuses on understanding customer churn, analyzing key factors influencing churn, and building
-a simple machine learning model to predict whether a customer is likely to churn.
+Customer churn is a major business challenge in the telecom industry — losing a customer costs
+significantly more than retaining one. This project builds a complete churn prediction pipeline:
+from raw data exploration to a deployed Streamlit app that predicts churn in real time.
+
 
 ---
 
 ## 🎯 Business Problem
 
-The telecom company is experiencing revenue loss due to customers leaving. The objective is to:
+A telecom company is experiencing revenue loss due to customer attrition. The goals are:
 
-- Identify customers who are churning
-- Understand why they are churning
-- Predict churn early to support retention strategies
+- Identify customers who are likely to churn
+- Understand the key drivers behind churn behavior
+- Predict churn early enough to support targeted retention strategies
 
 ---
 
 ## 📂 Dataset
 
-- **Source:** Telecom Customer Churn Dataset
-- **Target Variable:** `Churn` (Yes / No)
-- **Features:** Customer tenure, subscribed services, and billing details
+| Property | Details |
+|---|---|
+| Source | Telecom Customer Churn Dataset (Kaggle) |
+| Size | ~7,000 rows · 21 features |
+| Target | `Churn` — Yes / No (binary classification) |
+| Key features | Tenure, contract type, monthly charges, internet service, payment method |
+
+> **Class imbalance note:** The dataset is imbalanced (~26% churn). This was handled using
+> SMOTE during model training.
 
 ---
 
@@ -47,11 +54,14 @@ The telecom company is experiencing revenue loss due to customers leaving. The o
 
 ## 🛠️ Tools & Technologies
 
-- Python
-- Pandas, NumPy
-- Matplotlib, Seaborn
-- Scikit-learn
-- Jupyter Notebook
+| Layer | Tools |
+|---|---|
+| Language | Python 3.10+ |
+| Data | Pandas, NumPy |
+| Visualization | Matplotlib, Seaborn |
+| ML | Scikit-learn, imbalanced-learn (SMOTE) |
+| App | Streamlit |
+| Environment | Jupyter Notebook |
 
 ---
 
