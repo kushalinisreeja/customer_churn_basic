@@ -7,6 +7,12 @@
 
 ---
 
+# 🚀 Live Demo
+
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://customerchurnbasic-eafg3dwym9kivele3th3yn.streamlit.app/)
+
+---
+
 ## 📌 Project Overview
 
 Customer churn is a major business challenge in the telecom industry — losing a customer costs
